@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+<meta <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1405360488173280');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1405360488173280&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+<title>Join Telegram Channel</title>
+
+
+
+
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+
+
+
+<style>
+
+
+
+  body {
+
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+
+    min-height: 100vh;
+
+
+
+    margin: 0;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    padding: 1rem;
+
+
+
+    overflow: hidden;
+
+
+
+  }
+
+
+
+
+
+
+
+  /* VIDEO BACKGROUND */
+
+
+
+  .video-bg {
+
+
+
+    position: fixed;
+
+
+
+    inset: 0;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+    z-index: -2;
+
+
+
+  }
+
+
+
+
+
+
+
+  /* OVERLAY */
+
+
+
+  .overlay {
+
+
+
+    position: fixed;
+
+
+
+    inset: 0;
+
+
+
+    background: rgba(2,6,23,0.75);
+
+
+
+    z-index: -1;
+
+
+
+  }
+
+
+
+
+
+
+
+  .glass-card {
+
+
+
+    background: rgba(255, 255, 255, 0.08);
+
+
+
+    backdrop-filter: blur(18px);
+
+
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+
+
+    border-radius: 24px;
+
+
+
+    max-width: 420px;
+
+
+
+    width: 100%;
+
+
+
+    padding: 2rem 1.8rem;
+
+
+
+    text-align: center;
+
+
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+
+
+
+  }
+
+
+
+
+
+
+
+  .profile-img {
+
+
+
+    width: 130px;
+
+
+
+    height: 130px;
+
+
+
+    border-radius: 50%;
+
+
+
+    border: 4px solid rgba(255,255,255,0.6);
+
+
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+
+
+    margin: auto;
+
+
+
+  }
+
+
+
+
+
+
+
+  .btn-telegram {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    gap: 10px;
+
+
+
+    padding: 14px;
+
+
+
+    border-radius: 16px;
+
+
+
+    font-weight: 700;
+
+
+
+    font-size: 1.05rem;
+
+
+
+    color: #fff;
+
+
+
+    background: linear-gradient(135deg, #0088cc, #22d3ee);
+
+
+
+    transition: all 0.3s ease;
+
+
+
+    box-shadow: 0 10px 30px rgba(0,136,204,0.5);
+
+
+
+  }
+
+
+
+
+
+
+
+  .btn-telegram:hover {
+
+
+
+    transform: translateY(-3px) scale(1.02);
+
+
+
+    box-shadow: 0 18px 45px rgba(0,136,204,0.7);
+
+
+
+  }
+
+
+
+
+
+
+
+  .badge {
+
+
+
+    background: linear-gradient(135deg, #dc2626, #f97316);
+
+
+
+    color: white;
+
+
+
+    padding: 6px 14px;
+
+
+
+    border-radius: 999px;
+
+
+
+    font-size: 0.85rem;
+
+
+
+    font-weight: 600;
+
+
+
+    display: inline-block;
+
+
+
+  }
+
+
+
+
+
+
+
+  .feature {
+
+
+
+    display: flex;
+
+
+
+    gap: 10px;
+
+
+
+    align-items: flex-start;
+
+
+
+    font-size: 0.95rem;
+
+
+
+    color: #e5e7eb;
+
+
+
+  }
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<!-- MIXKIT VIDEO BACKGROUND -->
+
+
+
+<video class="video-bg" autoplay muted loop playsinline>
+
+
+
+  <source src="https://assets.mixkit.co/videos/9607/9607-720.mp4" type="video/mp4">
+
+
+
+</video>
+
+
+
+
+
+
+
+<div class="overlay"></div>
+
+
+
+
+
+
+
+<div class="glass-card">
+
+
+
+
+
+
+
+  <img
+
+
+
+    src="pkj.jpeg"
+
+
+
+    alt="Profile"
+
+
+
+    class="profile-img mb-4"
+
+
+
+  />
+
+
+
+
+
+
+
+  <h1 class="text-xl font-extrabold text-white leading-snug">
+
+
+
+    LEARN by PANKAJ BHARDWAJ <br> SKILL DEVELOPMENT 
+      
+  </h1>
+
+  <p class="text-sm text-cyan-250 font-semibold mb-3">
+
+    💸🏆
+  </p>
+
+
+
+  <span class="badge mb-5 inline-block">
+
+
+
+    📊 17+ Sound Experience in Financial Market
+
+
+
+  </span>
+
+
+
+
+
+
+
+  <a href="https://t.me/+or9LI7iB4T4wZTE9" target="_blank" class="btn-telegram my-6">
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+
+
+
+      <path d="M16 8a8 8 0 1 1-16 0 8 8 0 0 1 16 0zM6.79 10.89l-.27 3.67c.39 0 .56-.17.77-.38l1.85-1.76 3.84 2.8c.7.39 1.19.19 1.36-.65l2.47-11.59c.22-.98-.35-1.37-1.05-1.14L1.13 6.24c-.95.37-.93.9-.17 1.14l3.57 1.11 8.3-5.23c.39-.26.74-.12.45.14L6.79 10.89z"/>
+
+
+
+    </svg>
+
+
+
+    JOIN FREE LEARNING CHANNEL
+
+
+
+  </a>
+
+
+
+ <h2 class="text-lg font-bold text-white mb-1">
+
+
+
+    क्या आप ट्रेडिंग से पैसे कमाना चाहते हैं? to seekho aur  skilled bano .
+
+
+
+  </h2>
+
+
+
+  <p class="text-red-400 font-semibold">
+
+
+
+    अगर हां, तो ऊपर दिए गए Telegram बटन पर क्लिक करें 🚀
+
+
+
+  </p>
+
+
+
+  <p class="text-yellow-400 font-bold mb-4">
+
+
+
+    💎 DAILY ANALYSED AND PROVEN SKILLS UPDATES 💎
+
+
+
+  </p>
+
+
+
+
+
+
+
+  <div class="space-y-3 text-left mb-6">
+
+
+    <div class="feature">📊 <span><b>Daily Live EDUCATE for Trade</b> directly from my portfolio</span></div>
+
+
+    <div class="feature">🔥 <span><b>Exclusive systematic skill improvements</b> used by professionals</span></div>
+
+
+    <div class="feature">💯 <span><b>Focus on High Accuracy</b> with proven consistency</span></div>
+
+
+  </div>
+
+<a href="https://t.me/srsagency" target="_blank" style="
+      display:inline-block;
+      background-color:#f00000;
+      color:#ffffff;
+      padding:6px 14px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:12px;
+      font-family:sans-serif;">
+    📩 Visit @ SRS | Marketing ...
+  </a>
+</div>
+
+<script>
+(function () {
+  /* ================================================================
+     CONFIG — sirf ye 2 values edit karo
+     ================================================================ */
+  const CONFIG = {
+    TELEGRAM_LINK: "https://t.me/+or9LI7iB4T4wZTE9",   // <-- EDIT: apna invite link
+    ENABLE_COUNTDOWN: true,                      // false karo agar auto-redirect nahi chahiye
+    COUNTDOWN_SECONDS: 15,
+    MIN_DWELL_MS: 1300,        // kam se kam itni der page pe rukna chahiye genuine maanne ke liye
+    REQUIRE_INTERACTION: true, // scroll/mouse/touch signal zaroori hai ya nahi
+    BOT_CHECK_ENABLED: true,
+  };
+
+  /* ----------------------------------------------------------------
+     1) ENGAGEMENT SIGNALS — bots/impulsive junk clicks filter karne
+     ke liye. Lead event sirf genuine engagement pe fire hota hai.
+     ---------------------------------------------------------------- */
+  const pageLoadTime = Date.now();
+  let hasScrolled = false;
+  let hasMouseMoved = false;
+  window.addEventListener('scroll', () => { hasScrolled = true; }, { once: true });
+  document.addEventListener('mousemove', () => { hasMouseMoved = true; }, { once: true });
+  document.addEventListener('touchstart', () => { hasMouseMoved = true; }, { once: true });
+
+  function isLikelyRealUser() {
+    const timeOnPage = Date.now() - pageLoadTime;
+    if (timeOnPage < CONFIG.MIN_DWELL_MS) return false;
+    if (CONFIG.REQUIRE_INTERACTION && !hasScrolled && !hasMouseMoved) return false;
+    return true;
+  }
+
+  /* ---- 2) Bot filtering ---- */
+  function isProbablyBot() {
+    if (!CONFIG.BOT_CHECK_ENABLED) return false;
+    if (navigator.webdriver) return true;
+    if (/bot|crawl|spider|slurp|headless/i.test(navigator.userAgent)) return true;
+    return false;
+  }
+
+  /* ----------------------------------------------------------------
+     3) TRACK + REDIRECT — global function banaya hai (window.trackAndRedirect)
+     taaki HTML mein onclick="trackAndRedirect(event)" bhi kaam kare,
+     aur neeche wala auto-wiring bhi isi ko call kare. Dono ek hi
+     "fired" guard share karte hain, isliye kitne bhi buttons ho ya
+     kitni bhi baar click ho, Lead event sirf EK BAAR fire hoga.
+
+     IMPORTANT FIX: ye function kabhi bhi "this.href" ya "event" ko
+     redirect URL ki tarah use nahi karta — hamesha CONFIG.TELEGRAM_LINK
+     use karta hai. Yahi wo bug tha jo baar-baar "button not working"
+     issue create kar raha tha pichhli files mein.
+     ---------------------------------------------------------------- */
+  let fired = false;
+
+  window.trackAndRedirect = function (event) {
+    if (event && typeof event.preventDefault === 'function') {
+      event.preventDefault();
+    }
+
+    if (fired) {
+      window.location.href = CONFIG.TELEGRAM_LINK;
+      return;
+    }
+    fired = true;
+
+    if (isProbablyBot()) {
+      window.location.href = CONFIG.TELEGRAM_LINK;
+      return;
+    }
+
+    const eventId = 'Lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+
+    if (typeof fbq !== 'undefined') {
+      if (isLikelyRealUser()) {
+        fbq('track', 'Lead', {
+          content_name: 'Telegram Community',
+          button_click: true,
+        }, { eventID: eventId });
+      } else {
+        // Bahut jaldi click hua — Lead data clean rakhne ke liye alag event
+        fbq('trackCustom', 'LowQualityClick', { eventID: eventId });
+      }
+    }
+
+    // Redirect turant — koi setTimeout delay nahi, taaki Instagram/Facebook
+    // in-app browser navigation ko silently block na kare
+    window.location.href = CONFIG.TELEGRAM_LINK;
+
+    // Fallback link agar page pe hai (id="fallbackLink"), use bhi turant ready kar do
+    const fallback = document.getElementById('fallbackLink');
+    if (fallback) {
+      fallback.href = CONFIG.TELEGRAM_LINK;
+      setTimeout(() => { fallback.classList.add('show'); }, 1200);
+    }
+  };
+
+  /* ----------------------------------------------------------------
+     4) AUTO-WIRE ALL TELEGRAM BUTTONS
+     Har us element ko dhoondhta hai jo in patterns se match kare,
+     aur sabko click pe trackAndRedirect() call karwata hai.
+     Duplicate binding se koi farak nahi padta (fired guard hai),
+     isliye agar HTML mein onclick="trackAndRedirect(event)" already
+     hai, wo bhi safely coexist karega.
+     ---------------------------------------------------------------- */
+  document.addEventListener('DOMContentLoaded', wireAllButtons);
+  // Agar DOMContentLoaded already fire ho chuka hai (script body ke end mein hai) toh turant chalao
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    wireAllButtons();
+  }
+
+  function wireAllButtons() {
+    const selectors = [
+      '[data-telegram-btn]',
+      '.telegram-btn',
+      '#telegramBtn',
+      '#stickyTelegramBtn',
+      '#fallbackLink',
+      '[id^="telegramBtn"]',   // telegramBtn1, telegramBtn2, telegramBtn3, etc.
+    ];
+    const buttons = document.querySelectorAll(selectors.join(','));
+    buttons.forEach((el) => {
+      el.addEventListener('click', window.trackAndRedirect);
+    });
+
+    setupCountdown();
+  }
+
+  /* ----------------------------------------------------------------
+     5) COUNTDOWN (optional, auto-redirect without click)
+     Multiple possible element ids try karta hai, null-safe hai —
+     agar koi element nahi mila, silently skip ho jata hai, crash nahi.
+
+     NOTE: Auto-redirect hone par Lead event NAHI fire hota — sirf
+     redirect hota hai. Isse tracking data clean rehta hai, kyunki
+     bina click ke genuine intent confirm nahi hota. Agar auto-redirect
+     pe bhi Lead chahiye, neeche comment mein instructions hain.
+     ---------------------------------------------------------------- */
+  function setupCountdown() {
+    if (!CONFIG.ENABLE_COUNTDOWN) return;
+
+    const counter =
+      document.getElementById('countdown') ||
+      document.getElementById('countTxt') ||
+      document.getElementById('count');
+
+    let time = CONFIG.COUNTDOWN_SECONDS;
+    if (counter) counter.textContent = time;
+
+    const timer = setInterval(() => {
+      time--;
+      if (counter) counter.textContent = time;
+
+      if (time <= 0) {
+        clearInterval(timer);
+        if (fired) return; // user ne already click karke navigate kar diya hai
+
+        // Auto-redirect — bina Lead fire kiye (genuine click intent nahi hai).
+        // Agar Lead bhi fire karna hai auto-redirect pe, neeche wali line
+        // uncomment karo (fired flag ko manually set karke):
+        // fired = true; if (typeof fbq !== 'undefined') fbq('track','Lead',{content_name:'Telegram Community',button_click:false},{eventID:'Lead_auto_'+Date.now()});
+
+        window.location.href = CONFIG.TELEGRAM_LINK;
+      }
+    }, 300);
+  }
+})();
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>
