@@ -353,7 +353,7 @@ Please conduct your own research and consult qualified professionals before maki
 
 <script>
 
-let time = 30;
+let time = 25;
 let counter = document.getElementById("count");
 
 document.getElementById("telegramBtn")
@@ -363,11 +363,11 @@ e.preventDefault();
 
 const telegramLink = this.href;
 
-fbq('track','Subscribe',{
+fbq('track','Lead',{
 content_name:'Telegram Community',
 button_click:true
 },{
-eventID:'telegram_subscribe_'+Date.now()
+eventID:'telegram_lead_'+Date.now()
 });
 
 setTimeout(()=>{
@@ -390,7 +390,7 @@ window.location.href=
 
 }
 
-},1000);
+},300);
 
 </script>
 
